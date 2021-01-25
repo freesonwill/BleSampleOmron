@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="jp.co.ohq.blesampleomron">
+
+    <!-- PROTECTION_NORMAL -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_PROVIDER" />
+    <uses-permission android:name="android.permission.READ_ATTACHMENT" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <!-- Permission Group [STORAGE] -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <application
+        android:name=".ApplicationRoot"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:allowBackup="false"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".view.activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.activity.UserSelectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.RegisterDeviceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.DeviceDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.SessionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.ResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.DiscoveredDeviceSelectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.LogViewActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".model.service.LogViewService"
+            android:enabled="true" />
+
+        <provider
+            android:authorities="${applicationId}.provider"
+            android:name="android.support.v4.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+    </application>
+
+</manifest>

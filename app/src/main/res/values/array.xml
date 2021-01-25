@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="entries_create_bond_option">
+        <item>@string/create_bond_not_use</item>
+        <item>@string/create_bond_before_catt_connection</item>
+        <item>@string/create_bond_after_services_discovered</item>
+    </string-array>
+    <string-array name="entry_values_create_bond_option">
+        <item>@string/create_bond_not_use</item>
+        <item>@string/create_bond_before_catt_connection</item>
+        <item>@string/create_bond_after_services_discovered</item>
+    </string-array>
+    <string-array name="entries_remove_bond_option">
+        <item>@string/remove_bond_not_use</item>
+        <item>@string/remove_bond_use</item>
+    </string-array>
+    <string-array name="entry_values_remove_bond_option">
+        <item>@string/remove_bond_not_use</item>
+        <item>@string/remove_bond_use</item>
+    </string-array>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/TableRow">
+
+    <TextView
+        android:id="@+id/sequenceNumber"
+        style="@style/TableItem"
+        tools:text="1"/>
+
+    <TextView
+        android:id="@+id/received_time"
+        style="@style/TableItem"
+        tools:text="2017-06-08 13:56:22"/>
+
+    <TextView
+        android:id="@+id/user_name"
+        style="@style/TableItem"
+        tools:text="User A"/>
+
+    <TextView
+        android:id="@+id/type"
+        style="@style/TableItem"
+        tools:text="Register"/>
+
+    <TextView
+        android:id="@+id/protocol"
+        style="@style/TableItem"
+        tools:text="Omron Extension"/>
+
+    <TextView
+        android:id="@+id/model_name"
+        style="@style/TableItem"
+        tools:text="J750"/>
+
+    <TextView
+        android:id="@+id/localName"
+        style="@style/TableItem"
+        tools:text="BLESmart_12341234AABBCCDDEEFF"/>
+
+    <TextView
+        android:id="@+id/result"
+        style="@style/TableItem"
+        tools:text="SUCCESS"/>
+
+</TableRow>

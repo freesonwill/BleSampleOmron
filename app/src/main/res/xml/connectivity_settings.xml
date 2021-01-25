@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/connection_parameters"
+    >
+
+    <ListPreference
+        android:key="create_bond_option"
+        android:title="@string/create_bond_option"
+        android:summary="%s"
+        android:dialogTitle="@string/create_bond_option"
+        android:entries="@array/entries_create_bond_option"
+        android:entryValues="@array/entry_values_create_bond_option"
+        android:defaultValue="@string/create_bond_before_catt_connection"
+        />
+
+    <ListPreference
+        android:key="remove_bond_option"
+        android:title="@string/remove_bond_option"
+        android:summary="%s"
+        android:dialogTitle="@string/remove_bond_option"
+        android:entries="@array/entries_remove_bond_option"
+        android:entryValues="@array/entry_values_remove_bond_option"
+        android:defaultValue="@string/remove_bond_not_use"
+        />
+
+    <CheckBoxPreference
+        android:key="assist_pairing_dialog"
+        android:title="@string/assist_pairing_dialog"
+        android:summary="@string/assist_pairing_dialog_summary"
+        android:defaultValue="false"
+        />
+
+    <CheckBoxPreference
+        android:key="auto_pairing"
+        android:title="@string/auto_pairing"
+        android:summary="@string/auto_pairing_summary"
+        android:defaultValue="false"
+        />
+
+    <CheckBoxPreference
+        android:key="auto_enter_the_pin_code"
+        android:title="@string/auto_enter_the_pin_code"
+        android:summary="@string/auto_enter_the_pin_code_summary"
+        android:defaultValue="false"
+        />
+
+    <EditTextPreference
+        android:key="pin_code"
+        android:title="@string/pin_code"
+        android:summary="@string/pin_code_summary"
+        android:defaultValue="000000"
+        />
+
+    <CheckBoxPreference
+        android:key="stable_connection"
+        android:title="@string/stable_connection"
+        android:summary="@string/stable_connection_summary"
+        android:defaultValue="true"
+        />
+
+    <EditTextPreference
+        android:key="stable_connection_wait_time"
+        android:title="@string/stable_connection_wait_time"
+        android:summary="@string/stable_connection_wait_time_summary"
+        android:defaultValue="1500"
+        />
+
+    <CheckBoxPreference
+        android:key="connection_retry"
+        android:title="@string/connection_retry"
+        android:summary="@string/connection_retry_summary"
+        android:defaultValue="true"
+        />
+
+    <EditTextPreference
+        android:key="connection_retry_delay_time"
+        android:title="@string/connection_retry_delay_time"
+        android:summary="@string/connection_retry_delay_time_summary"
+        android:defaultValue="1000"
+        />
+
+    <EditTextPreference
+        android:key="connection_retry_count"
+        android:title="@string/connection_retry_count"
+        android:summary="@string/connection_retry_count_summary"
+        android:defaultValue="0"
+        />
+
+    <CheckBoxPreference
+        android:key="refresh_use"
+        android:title="@string/refresh_use"
+        android:summary="@string/refresh_use_summary"
+        android:defaultValue="true"
+        />
+
+</PreferenceScreen>

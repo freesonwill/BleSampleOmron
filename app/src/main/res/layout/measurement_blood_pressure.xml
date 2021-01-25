@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rounded_blood_pressure"
+    android:minWidth="@dimen/measurement_min_width"
+    android:orientation="vertical"
+    android:padding="@dimen/item_padding"
+    >
+
+    <include
+        layout="@layout/measurement_general"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <!-- 最大血圧 -->
+        <TableRow
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/systolic"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/systolic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/measurement_text_size"
+                    tools:text="120.0"
+                    />
+
+                <TextView
+                    android:id="@+id/systolicUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    tools:text="@string/unit_mm_hg"
+                    />
+            </LinearLayout>
+        </TableRow>
+
+        <!-- 最低血圧 -->
+        <TableRow
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/diastolic"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/diastolic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/measurement_text_size"
+                    tools:text="80.0"
+                    />
+
+                <TextView
+                    android:id="@+id/diastolicUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    tools:text="@string/unit_mm_hg"
+                    />
+            </LinearLayout>
+        </TableRow>
+
+        <!-- 平均脈拍 -->
+        <TableRow
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pulse_rate"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/pulse_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/measurement_text_size"
+                    tools:text="70.0"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unit_bpm"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

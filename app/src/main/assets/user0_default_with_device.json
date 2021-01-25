@@ -1,0 +1,35 @@
+{
+    "identifier":0,
+    "name":"User A",
+    "dateOfBirth":[2017,1,1],
+    "height":170.5,
+    "gender":0,
+    "registeredDevices":[
+        {
+            "address":"00:00:00:00:00:00",
+            "localName":"BLESmart_0000",
+            "modelName":"HEM-9200T",
+            "deviceCategory":0,
+            "selectedProfile":0,
+            "userIndex":1,
+            "consentCode":526,
+            "lastSequenceNumber":1,
+            "beaconProximityUUID":"00001811-0000-1000-8000-00805f9b34fb",
+            "beaconMajor":1,
+            "beaconMinor":1
+        },
+        {
+            "address":"11:11:11:11:11:11",
+            "localName":"BLESmart_1111",
+            "modelName":"HEM-7600T",
+            "deviceCategory":1,
+            "selectedProfile":1,
+            "userIndex":2,
+            "consentCode":526,
+            "lastSequenceNumber":2,
+            "beaconProximityUUID":"00001811-0000-1000-8000-00805f9b34fb",
+            "beaconMajor":1,
+            "beaconMinor":1
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "User A",
+    "dateOfBirth": "2017-01-01",
+    "height": 180.5,
+    "gender": 0,
+    "registeredDevices": []
+  },
+  {
+    "name": "User B",
+    "dateOfBirth": "2017-02-01",
+    "height": 170.5,
+    "gender": 0,
+    "registeredDevices": []
+  },
+  {
+    "name": "User C",
+    "dateOfBirth": "2017-03-01",
+    "height": 160.5,
+    "gender": 1,
+    "registeredDevices": []
+  },
+  {
+    "name": "User D",
+    "dateOfBirth": "2017-04-01",
+    "height": 150.5,
+    "gender": 1,
+    "registeredDevices": []
+  }
+]

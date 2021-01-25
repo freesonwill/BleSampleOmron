@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/TableHeader">
+
+    <TextView
+        style="@style/TableHeaderItem"
+        android:text="@string/number"/>
+
+    <TextView
+        style="@style/TableHeaderItem"
+        android:text="@string/date"/>
+
+    <TextView
+        style="@style/TableHeaderItem"
+        android:text="@string/user"/>
+
+    <TextView
+        style="@style/TableHeaderItem"
+        android:text="@string/type"/>
+
+    <TextView
+        style="@style/TableHeaderItem"
+        android:text="@string/protocol"/>
+
+    <TextView
+        style="@style/TableHeaderItem"
+        android:text="@string/model_name"/>
+
+    <TextView
+        style="@style/TableHeaderItem"
+        android:text="@string/local_name"/>
+
+    <TextView
+        style="@style/TableHeaderItem"
+        android:text="@string/status"/>
+
+</TableRow>

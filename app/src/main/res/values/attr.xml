@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TwoLineTextView">
+        <attr name="title" format="string"/>
+        <attr name="summary" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="SectionWithSubject">
+        <attr name="subject" format="string"/>
+        <attr name="divider_top" format="boolean"/>
+        <attr name="divider_bottom" format="boolean"/>
+    </declare-styleable>>
+</resources>
