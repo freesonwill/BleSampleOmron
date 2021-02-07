@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.math.BigDecimal;
 import java.util.HashMap;
@@ -123,7 +124,6 @@ public class SessionFragment extends BaseFragment implements
             option.put(OHQSessionOptionKey.AllowControlOfReadingPositionToMeasurementRecordsKey, true);
         }
         option.put(OHQSessionOptionKey.ReadMeasurementRecordsKey, true);
-
         final HistoryData historyData = new HistoryData();
         historyData.setComType(ComType.Register);
         historyData.setAddress(discoverDevice.getAddress());
@@ -279,6 +279,9 @@ public class SessionFragment extends BaseFragment implements
             @NonNull final String address,
             @NonNull final Map<OHQSessionOptionKey, Object> option,
             @NonNull final HistoryData partialHistoryData) {
+        //option.remove(OHQSessionOptionKey.UserDataKey);
+        //option.remove(OHQSessionOptionKey.UserDataUpdateFlagKey);
+        //option.remove(OHQSessionOptionKey.ReadMeasurementRecordsKey);
         AppLog.vMethodIn(mode.name() + " " + address + " " + option + " " + partialHistoryData.toString());
         SessionFragment fragment = new SessionFragment();
         fragment.setArguments(Bundler.bundle(
@@ -315,6 +318,8 @@ public class SessionFragment extends BaseFragment implements
         if (null == option) {
             throw new IllegalArgumentException("Argument '" + ARG_OPTION + "' must not be null.");
         }
+        Toast.makeText(this.getContext(), "sessionCtx:" + option.keySet().toString(), Toast.LENGTH_SHORT).show();
+
         mOption = option;
         final HistoryData partialHistoryData = args.getParcelable(ARG_PARTIAL_HISTORY_DATA);
         if (null == partialHistoryData) {
@@ -550,10 +555,12 @@ public class SessionFragment extends BaseFragment implements
             public void onSuccess() {
                 onStarted();
             }
+
             @Override
             public void onFailure() {
                 onStarted();
             }
+
             private void onStarted() {
                 handler.post(new Runnable() {
                     @Override
